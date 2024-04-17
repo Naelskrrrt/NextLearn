@@ -4,7 +4,6 @@ import { useFormState } from "react-dom";
 import { saveEmployee } from "@/lib/action";
 const CreateEmployePage = () => {
   const [state, formAction] = useFormState(saveEmployee, null);
-  console.log(state?.Error?.email);
   return (
     <div className="max-w-md mx-auto mt-5">
       <h1 className="text-2xl text-center mb-5 capitalize">Add new Employee</h1>
